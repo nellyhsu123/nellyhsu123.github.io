@@ -51,10 +51,6 @@
 	width: 100%
 }
 
-.nav_bar_right{
-	float: right;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -69,6 +65,7 @@ li {
 }
 
 li:first-child {
+	float: left;
     border-left: none;
 }
 
