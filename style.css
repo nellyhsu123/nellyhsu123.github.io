@@ -67,6 +67,7 @@ li {
 li:first-child {
 	float: left;
     border-left: none;
+    margin-left: 50px;
 }
 
 li a:hover:not(.active) {
