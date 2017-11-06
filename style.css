@@ -19,6 +19,11 @@ body {
 
 
 .pics {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 	max-width: 100%;
 }
 
@@ -48,9 +53,6 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-
-
 
 .row {
 	display: flex;
