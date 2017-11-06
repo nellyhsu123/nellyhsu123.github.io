@@ -1,4 +1,4 @@
-*/*{
+/**{
 	border: 1px solid red;
 }*/
 
@@ -52,6 +52,9 @@ a {
 
 /* nav bar design from w3schools.com --> */
 ul {
+	position: fixed;
+    top: 0;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
