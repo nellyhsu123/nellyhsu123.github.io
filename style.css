@@ -51,12 +51,13 @@
 	width: 100%
 }
 
+/* nav bar design from w3schools.com --> */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #B1A296;
+    background-color: #379683;
 }
 
 li {
@@ -75,4 +76,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+body {
+	color: #EDF5E1;
 }
