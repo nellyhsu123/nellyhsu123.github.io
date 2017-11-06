@@ -17,6 +17,12 @@ body {
 	color: #EDF5E1;
 }
 
+h2 {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
 
 .pics {
 	margin-left: auto;
