@@ -14,6 +14,7 @@
 }
 
 body {
+	margin:0;
 	color: #EDF5E1;
 	font-size: 100%;
 }
@@ -101,7 +102,8 @@ li a {
 	width: 41.66%
 }
 .col-6 {
-	width: 50%
+	width: 48%;
+	margin: 1%;
 }
 .col-7 {
 	width: 58.33%
