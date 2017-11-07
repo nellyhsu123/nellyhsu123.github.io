@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="circle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <script src="https://use.fontawesome.com/47f9654641.js"></script>
+    <!--code used from w3schools to impliment auto scrolling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+	});
+</script>
   </head>
 
   <body bgcolor="#05386B">
@@ -99,6 +127,31 @@
   				</div>
   			</div>
   		</div> 
+
+  		<div id="services">
+  			<div class="row">
+  				<div class="col-12">
+  					<h2>Services</h2>
+  				</div>
+  				<div class="col-4">
+  					<h3>Service 1</h3>
+  				</div>
+  				<div class="col-4">
+  					<h3>Service 2</h3>
+  				</div>
+  				<div class="col-4">
+  					<h3>Service 3</h3>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div id="Contact">
+  			<div class="row">
+  				<div class="col-12">
+  					<h2>Contact Me</h2>
+  				</div>
+  			</div>
+  		</div>
 
   	</div>
 </html>
