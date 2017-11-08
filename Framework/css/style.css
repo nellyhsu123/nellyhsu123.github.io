@@ -90,10 +90,12 @@ li a:hover {
     }
 }
 
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	padding-top: 47px;
 }
 .col-1 {
 	width: 8.33%
@@ -138,5 +140,13 @@ li a:hover {
     [class*="col-"] {
         width: 100%;
     }
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 282px;
+	}
+
 }
 
