@@ -83,16 +83,9 @@ li a:hover {
 	background-color: #5CDB95;
 }
 
-@media screen and (max-width : 760px){
+@media screen and (max-width: 768px){
     /*Make all menu links full width*/
     ul li, li a {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
         width: 100%;
     }
 }
@@ -101,7 +94,7 @@ li a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	}
+}
 .col-1 {
 	width: 8.33%
 }
@@ -140,5 +133,10 @@ li a:hover {
 	width: 100%
 }
 
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
 
