@@ -84,12 +84,15 @@ li a:hover {
 }
 
 @media screen and (max-width : 760px){
-    /*Create vertical spacing*/
-    li {
-        margin-bottom: 1px;
-    }
     /*Make all menu links full width*/
     ul li, li a {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
         width: 100%;
     }
 }
@@ -136,4 +139,6 @@ li a:hover {
 .col-12 {
 	width: 100%
 }
+
+
 
