@@ -51,11 +51,6 @@ a {
 	max-width: 100%;
 }
 
-@media screen and (max-width: 600px){
-    ul li.right, 
-    ul li {float: none;}
-}
-
 
 /* nav bar design from https://www.w3schools.com/css/css_navbar.asp --> */
 ul {
@@ -70,7 +65,8 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline-block;
+    float:left;
     border-left:1px solid #bbb;
 }
 
@@ -82,14 +78,21 @@ li a {
     text-decoration: none;
 }
 
-ul .icon {
-	display: none;
-}
 
 li a:hover {
 	background-color: #5CDB95;
 }
 
+@media screen and (max-width : 760px){
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+}
 
 .row {
 	display: flex;
