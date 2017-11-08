@@ -16,6 +16,7 @@
 body {
 	margin:0;
 	color: #EDF5E1;
+	background-color: #05386B;
 	font-size: 100%;
 }
 
@@ -50,8 +51,13 @@ a {
 	max-width: 100%;
 }
 
+@media screen and (max-width: 600px){
+    ul li.right, 
+    ul li {float: none;}
+}
 
-/* nav bar design from w3schools.com --> */
+
+/* nav bar design from https://www.w3schools.com/css/css_navbar.asp --> */
 ul {
 	position: fixed;
     top: 0;
@@ -64,13 +70,8 @@ ul {
 }
 
 li {
-    float: right;
+    float: left;
     border-left:1px solid #bbb;
-}
-
-li:first-child {
-	float: left;
-    border-left: none;
 }
 
 li a {
@@ -80,6 +81,15 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+ul .icon {
+	display: none;
+}
+
+li a:hover {
+	background-color: #5CDB95;
+}
+
 
 .row {
 	display: flex;
