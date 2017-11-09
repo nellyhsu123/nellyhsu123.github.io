@@ -36,6 +36,7 @@ p {
 
 a {
 	color: #EDF5E1;
+	text-align: center;
 }
 
 .paw {
@@ -83,6 +84,10 @@ li a:hover {
 	background-color: #5CDB95;
 }
 
+a:hover {
+	background-color: #5CDB95;
+}
+
 form{
 	text-align: center;
 }
@@ -92,6 +97,22 @@ form{
     ul li, li a {
         width: 100%;
     }
+}
+
+#circle1 {
+	z-index: -1;
+}
+
+#circle2 {
+	z-index: -1;
+}
+
+#circle3 {
+	z-index: -1;
+}
+
+#circle4 {
+	z-index: -1;
 }
 
 
@@ -146,9 +167,6 @@ form{
     }
 
 	.row {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
 		padding-top: 282px;
 	}
 
