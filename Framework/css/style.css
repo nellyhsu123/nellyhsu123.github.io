@@ -83,6 +83,10 @@ li a:hover {
 	background-color: #5CDB95;
 }
 
+form{
+	text-align: center;
+}
+
 @media screen and (max-width: 768px){
     /*Make all menu links full width*/
     ul li, li a {
