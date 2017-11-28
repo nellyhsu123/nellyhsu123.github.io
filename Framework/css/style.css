@@ -127,7 +127,8 @@ form{
 	width: 25%
 }
 .col-4 {
-	width: 33.33%
+	width: 31.33%;
+	margin: 1%;
 }
 .col-5 {
 	width: 41.66%
