@@ -40,6 +40,11 @@ a {
 	text-align: center;
 }
 
+.pill{
+	background-color:#DDDDDD;
+ 	border-radius: 80px;
+}
+
 .center_section {
 	text-align: center;
 }
