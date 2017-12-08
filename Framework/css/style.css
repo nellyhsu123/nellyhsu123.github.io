@@ -72,9 +72,13 @@ ul {
     background-color: #379683;
 }
 
+li:first-child {
+	float:left;
+}
+
 li {
     display: inline-block;
-    float:left;
+    float:right;
     border-left:1px solid #bbb;
 }
 
