@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nelson Hsu">
     <link rel="stylesheet" href="Framework/css/style.css">
-    <link rel="stylesheet" href="circle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <script src="https://use.fontawesome.com/47f9654641.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -39,44 +38,44 @@
 	});
 	</script>
 
-	<!--Take out big picture at the top
-		Change skills to pill list
-		Make each project one row and provide screenshots
-		Take out services
-		Have interchangeable background color sections
-		Fix up nav bar (if I have time)-->
+	<!--
+		Make each project one row and provide screenshots-->
 
   </head>
 
   <body>
   	<nav>
 	  	<ul>
-		  	<li><a href="#top">NELSON HSU</a></li>
-		  	<li><a href="#contact">CONTACT</a></li>
-		  	<li><a href="#skills">SKILLS</a></li>
-		  	<li><a href="#projects">PROJECTS</a></li>
-		  	<li><a href="#about">ABOUT</a></li>
+			<li><a href="#top">NELSON HSU</a></li>
+			<div class="navbar_right">
+			  	<li><a href="#about">ABOUT</a></li>
+			  	<li><a href="#projects">PROJECTS</a></li>
+			  	<li><a href="#skills">SKILLS</a></li>
+			  	<li><a href="#contact">CONTACT</a></li>
+			 </div>
 		</ul>
 	</nav>
 
-  	<div class="grid">
+	<section id="top" class="demo">
+		<h1>NELSON HSU</h1>
+		<a href="#about"><span></span>See More</a>
+	</section>
 
-		<div class="row" id="top">
-			<div class="col-12">
-				<img class="pics" src="Images/website_pic.jpg">
-			</div>	
-		</div>
+  	<div class="grid">
   		
 		<div class="row" id="about">
 			<div class="col-12">
 				<h1>About Me</h1>
 			</div>
-			<div class="col-6">
+
+			<div class="col-1"></div>
+			<div class="col-5">
 				<img class="pics" src="Images/profile_pic.jpg">
 			</div>
-			<div class="col-6 end">
+			<div class="col-5">
 				<p>Hi my name is Nelson Hsu. I'm currently a full-time student attending University of California Irvine pursuing a B.S. in Computer Science. My passion for computer science began when I was introduced to the "hello world" program when I was young. Ever since then, I've fallen in love with programming and everything about it such as the logic and the critical thinking aspects. I especially love the styling and the aesthetics of programming when it comes to creating the front-end user interface design. During my free time I like to go to the gym, play basketball/tennis and enjoy the company of my friends.</p>
 			</div>
+			<div class="col-1"></div>
 		</div>
   		
 		<div class="row" id="projects">
@@ -116,6 +115,15 @@
 			<div class="col-12">
 				<h1>Programming Skills</h1>
 			</div>
+			<div class="col-3"></div>
+			<div class="col-6" id="subskills">
+				<span class="pill">Java</span>&nbsp&nbsp
+				<span class="pill">HTML/CSS/Javascript</span>&nbsp&nbsp
+				<span class="pill">C/C++</span>&nbsp&nbsp
+				<span class="pill">SQL</span>&nbsp&nbsp
+				<span class="pill">Android</span>
+			</div>
+			<div class="col-3"></div>
 			
 			
 		</div>

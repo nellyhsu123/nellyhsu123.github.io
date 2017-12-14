@@ -14,10 +14,12 @@
 }
 
 body {
-	margin:0;
-	color: #EDF5E1;
-	background-color: #05386B;
+	color: #F7F9FB;
+	background-color: #5085A5;
 	font-size: 100%;
+	height: 100%;
+   	margin: 0;
+   	padding: 0;
 }
 
 h1 {
@@ -36,13 +38,32 @@ p {
 }
 
 a {
-	color: #EDF5E1;
+	color: #F7F9FB;
 	text-align: center;
 }
 
+span {
+ 	font-size: 2em;
+}
+
+#projects {
+	background-color: #31708E;
+}
+
+#contact{
+	margin-bottom: 3%;
+	text-align: center;
+	background-color: #31708E;
+}
+
+#subskills{
+	margin-left: 8%; 
+	padding-bottom: 40px;
+}
+
 .pill{
-	background-color:#DDDDDD;
- 	border-radius: 80px;
+	background-color: #31708E;
+ 	border-radius: 25px;
 }
 
 .center_section {
@@ -55,8 +76,13 @@ a {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	max-height: 100vh;
+}
+
+nav{
+	z-index: 9;
+	position: fixed;
 }
 
 
@@ -69,17 +95,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #379683;
-}
-
-li:first-child {
-	float:left;
+    display: block;
+    background-color: #5085A5;
 }
 
 li {
     display: inline-block;
-    float:right;
-    border-left:1px solid #bbb;
 }
 
 li a {
@@ -90,33 +111,27 @@ li a {
     text-decoration: none;
 }
 
+.navbar_right{
+	float: right;
+}
 
 li a:hover {
-	background-color: #5CDB95;
+	background-color: #8FC1E3;
 }
 
 a:hover {
-	background-color: #5CDB95;
+	background-color: #8FC1E3;
 }
 
 form{
 	text-align: center;
 }
 
-@media screen and (max-width: 768px){
-    /*Make all menu links full width*/
-    ul li, li a {
-        width: 100%;
-    }
-}
-
-#circle {
-	z-index: -1;
-}
-
-#contact{
-	margin-bottom: 3%;
-	text-align: center;
+.intro{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -140,7 +155,9 @@ form{
 	margin: 1%;
 }
 .col-5 {
-	width: 41.66%
+	width: 39.66%;
+	margin: 1%;
+}
 }
 .col-6 {
 	width: 48%;
@@ -165,15 +182,88 @@ form{
 	width: 100%
 }
 
+
+#top { 
+	background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/X0R5VP6BSB.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 48%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+
+#top a {
+  padding-top: 60px;
+}
+#top a span {
+  position: absolute;
+  top: 0;
+  left: 48%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
-
-	.row {
-		padding-top: 282px;
-	}
 
 }
 
