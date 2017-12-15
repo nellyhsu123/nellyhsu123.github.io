@@ -77,7 +77,6 @@ span {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
-	max-height: 100vh;
 }
 
 nav{
@@ -154,10 +153,10 @@ form{
 	width: 31.33%;
 	margin: 1%;
 }
+
 .col-5 {
 	width: 39.66%;
 	margin: 1%;
-}
 }
 .col-6 {
 	width: 48%;
